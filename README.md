@@ -38,10 +38,15 @@ How It Works :
     Generates a final report summarizing execution details (output.txt).
 
 Running the Code :
+
     Install dependecies :
+
         Python 3...
+
         no pip installation is needed
+
     Run :
+
         python main.py
 
 
