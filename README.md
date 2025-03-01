@@ -4,7 +4,9 @@ Project Overview :
     detailed report at the end.
 
 Project Structure : 
+
     /threadPool
+
     |-- main.py                    # Starts the project
 
     |-- worker.py                  # Runs the simulation 
