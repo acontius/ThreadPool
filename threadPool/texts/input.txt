@@ -1,10 +1,10 @@
 # Number of threads
-3
+9
 # Number of tasks
 5
 # Task format: TaskName ArrivalTime ExecutionTime
 Task1 0 2
-Task2 1 2
-Task3 2 2
-Task4 3 2
-Task5 4 2
+Task2 4 5
+Task3 2 1
+Task4 3 0
+Task5 1 2

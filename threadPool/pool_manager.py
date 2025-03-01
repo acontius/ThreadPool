@@ -58,7 +58,7 @@ class PoolManager:
 
         report_text = "\n".join(report_lines)
 
-        with open("simulation_report.txt", "w", encoding="utf-8") as f:
+        with open("texts/output.txt", "w", encoding="utf-8") as f:
             f.write(report_text)
 
         return report_text

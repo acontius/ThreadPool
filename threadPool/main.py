@@ -4,7 +4,7 @@ from pool_manager import PoolManager
 from task_submitter import TaskSubmitter
 
 def main():
-    thread_number, tasks = read_and_sort_tasks("input.txt")
+    thread_number, tasks = read_and_sort_tasks("texts/input.txt")
 
     TManager = PoolManager(thread_number)
     TManager.starting()
@@ -20,7 +20,7 @@ def main():
 
     report = TManager.generate_report(simulation_time, TManager.simulation_start_time, simulation_end_time)
     print("\n" + report)
-    print("\n\U0001f4be Report saved to 'simulation_report.txt'!")
+    print("\n\U0001f4be Report saved to '/texts/output.txt.txt'!")
 
 if __name__ == "__main__":
     main()

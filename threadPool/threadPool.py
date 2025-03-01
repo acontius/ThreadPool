@@ -60,7 +60,7 @@ class poolManager:
         self.submission_complete = False
         self.logs = []
         self.log_lock = threading.Lock()
-        self.simulation_start_time = None  # Track start time
+        self.simulation_start_time = None
 
     def addition(self, task_tuple):
         with self.condition:
@@ -68,7 +68,7 @@ class poolManager:
             self.condition.notify()
 
     def starting(self):
-        self.simulation_start_time = time.time()  # Start time of the simulation
+        self.simulation_start_time = time.time()
         for i in range(self.threads_number):
             worker = Worker(i + 1, self.task_order, self.condition, self)
             self.threads.append(worker)
@@ -107,14 +107,13 @@ class poolManager:
 
         report_text = "\n".join(report_lines)
 
-        # Save to file
-        with open("simulation_report.txt", "w", encoding="utf-8") as f:
+        with open("texts/output.txt", "w", encoding="utf-8") as f:
             f.write(report_text)
 
         return report_text
 
 def main():
-    with open("input.txt", "r") as f:
+    with open("texts/input.txt", "r") as f:
         lines = f.readlines()
 
     lines = [line.strip() for line in lines if line.strip() and not line.startswith("#")]
@@ -146,7 +145,7 @@ def main():
 
     report = TManager.generate_report(simulation_time, TManager.simulation_start_time, simulation_end_time)
     print("\n" + report)
-    print("\n\U0001f4be Report saved to 'simulation_report.txt'!")
+    print("\n\U0001f4be Report saved to 'texts/output.txt'!")
 
 if __name__ == "__main__":
     main()
