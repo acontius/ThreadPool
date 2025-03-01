@@ -5,11 +5,19 @@ Project Overview :
 
 Project Structure : 
     /threadPool
+    |-- main.py                    # Starts the project
+
     |-- worker.py                  # Runs the simulation 
-    |-- task_submitter.py          # Worker thread logic
+    
+    |-- task_submitter.py          # Submit tasks based arrivlals
+    
     |-- pool_manager.py            # Handles dynamic task submission
-    |-- file_utils.py              # Manages thread pool and reporting
-    |-- input.txt                  # Reads & sorts input file
+    
+    |-- file_utils.py              # Get data from input file, sort by arrivals
+    
+    /texts                         # Saving all the .txt files here 
+    
+        |-- input.txt              # input file
 
 How It Works :
     input.txt, which contains a list of tasks with arrival times and execution
@@ -24,13 +32,14 @@ How It Works :
 
     Executes tasks concurrently, logging start & finish times (worker.py).
 
-    Generates a final report summarizing execution details (simulation_report.txt).
+    Generates a final report summarizing execution details (output.txt).
 
 Running the Code :
     Install dependecies :
         Python 3...
         no pip installation is needed
-    python main.py
+    Run :
+        python main.py
 
 
 
