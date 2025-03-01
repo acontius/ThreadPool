@@ -22,6 +22,7 @@ Project Structure :
         |-- input.txt              # input file
 
 How It Works :
+
     input.txt, which contains a list of tasks with arrival times and execution
     durations.
 
