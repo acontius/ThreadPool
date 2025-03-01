@@ -1,0 +1,30 @@
+
+==================================================
+📊  SIMULATION REPORT
+==================================================
+🕒  Simulation start time: 00:44:51
+🕒  Simulation end time: 00:45:03
+📌  Total simulation time: 12.00 seconds
+🧵  Total threads used: 3
+📚  Total tasks processed: 5
+🚫  Unused threads: 0
+📈  Average execution time per task: 2.40 seconds
+
+📜  EVENT LOGS:
+--------------------------------------------------
+➤ Submitted Task1
+➤ 🟢 Thread 1 started Task1 | Exec time: 2.00s
+➤ Submitted Task2
+➤ 🟢 Thread 2 started Task2 | Exec time: 2.00s
+➤ ✅ Thread 1 finished Task1 | Total time: 2.00s
+➤ ✅ Thread 2 finished Task2 | Total time: 2.00s
+➤ Submitted Task3
+➤ 🟢 Thread 3 started Task3 | Exec time: 2.00s
+➤ ✅ Thread 3 finished Task3 | Total time: 2.00s
+➤ Submitted Task4
+➤ 🟢 Thread 1 started Task4 | Exec time: 2.00s
+➤ ✅ Thread 1 finished Task4 | Total time: 2.00s
+➤ Submitted Task5
+➤ 🟢 Thread 2 started Task5 | Exec time: 2.00s
+➤ ✅ Thread 2 finished Task5 | Total time: 2.00s
+==================================================
